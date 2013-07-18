@@ -1,0 +1,15 @@
+@utor: Pablo_Marra
+
+Função para pegar o IP do usuário utilizando o PHP.
+
+Usando getenv (para pegar "variáveis do ambiente"):
+
+// Example use of getenv()
+$ip = getenv("REMOTE_ADDR");
+
+
+E usando a variável superGlobal $_SERVER
+
+// Or simply use a Superglobal ($_SERVER or $_ENV)
+$ip = $_SERVER["REMOTE_ADDR"];
+
